@@ -1,0 +1,53 @@
+
+<div *ngFor="let tempGalery of gallery" class="Sum">
+  <div class="Object">
+    <div  class="image">
+
+      <img width="230px" height="330px" src="{{tempGalery.image}}" />
+
+
+
+      <div class="title">
+
+        {{tempGalery.name}} | {{tempGalery.price | currency:'USD'}}
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="Overview">
+
+    <div class="ObjectOverview">
+      <div  class="imageOverview">
+
+        <img width="400px" height="560px" src="{{tempGalery.image}}" />
+
+      </div>
+
+      <div class="titleOverview">
+
+        <h1>{{tempGalery.name}} | ({{tempGalery.category}})</h1>
+
+      </div>
+
+
+
+    </div>
+    <div class="descriptionOverview">
+
+      {{tempGalery.description}}
+
+      <div class="priceOverview">
+
+        {{tempGalery.price | currency:'USD'}}
+
+      </div>
+
+    </div>
+
+
+  </div>
+</div>

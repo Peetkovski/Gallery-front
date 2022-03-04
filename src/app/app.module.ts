@@ -2,15 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { GalleryListComponent } from './components/gallery-list/gallery-list.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {AppService} from "./gallery/app.service";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+    GalleryListComponent,
+    ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
+
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

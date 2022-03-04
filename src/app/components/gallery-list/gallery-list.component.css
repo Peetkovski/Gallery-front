@@ -1,0 +1,69 @@
+.Object{
+  float: left;
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 12%;
+  height: 300px;
+}
+
+.imageOverview{
+  float: left;
+}
+
+.ObjectOverview{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.titleOverview{
+  float: left;
+  text-align: center;
+  width: 55%;
+}
+
+.title{
+  text-align: center;
+  margin-left: 35px;
+}
+
+.image{
+  width: 200px;
+  height: 160px;
+}
+
+img{
+  border-style: solid;
+  border-width: thin;
+}
+
+.Object:hover + .Overview{
+  visibility: visible;
+  opacity: 1;
+}
+
+.descriptionOverview{
+  float: left;
+  text-align: center;
+  font-size: 120%;
+  width: 50%;
+  margin-left: 30px;
+  height: 150px;
+  word-wrap: break-word;
+}
+
+.priceOverview{
+}
+
+.Overview{
+  opacity: 0;
+  transition: 1s;
+  background-color: #90BFE8;
+  margin-left: 400px;
+  margin-top:50px;
+  position: absolute;
+  width: 50%;
+  height: 580px;
+  border-style: solid;
+  border-width: thin;
+  visibility: hidden;
+}
