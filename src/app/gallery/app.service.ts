@@ -13,6 +13,7 @@ export class AppService {
 
   constructor(private httpClient: HttpClient) { }
 
+
   getGalleryList(): Observable<Gallery[]>{
 
     return this.httpClient.get<GetResponse>(this.baseUrl).pipe(

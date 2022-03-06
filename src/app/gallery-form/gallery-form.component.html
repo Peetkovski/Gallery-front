@@ -1,0 +1,54 @@
+<script src="../common/gallery.ts"></script>
+<div class="card my-5">
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" [(ngModel)]="gallery.name"
+               class="form-control"
+               id="name"
+               name="name"
+               placeholder="Enter image name"
+               required #name="ngModel">
+      </div>
+         <div class="form-group">
+        <label for="description">description</label>
+        <input type="text" [(ngModel)]="gallery.description"
+               class="form-control"
+               id="description"
+               name="description"
+               placeholder="Enter Image description"
+               required #description="ngModel">
+      </div>
+         <div class="form-group">
+        <label for="category">category</label>
+        <input type="text" [(ngModel)]="gallery.category"
+               class="form-control"
+               id="category"
+               name="category"
+               placeholder="Enter image category"
+               required #category="ngModel">
+      </div>
+         <div class="form-group">
+        <label for="name">price</label>
+        <input type="number" [(ngModel)]="gallery.price"
+               class="form-control"
+               id="price"
+               name="price"
+               placeholder="Enter image price"
+               required #price="ngModel">
+      </div>
+         <div class="form-group">
+        <label for="image">Image Url</label>
+        <input type="text" [(ngModel)]="gallery.image"
+               class="form-control"
+               id="image"
+               name="image"
+               placeholder="Enter image url"
+               required #image="ngModel">
+      </div>
+      <button type="submit" [disabled]="!userForm.form.valid"
+              class="btn btn-info">Submit</button>
+    </form>
+  </div>
+</div>

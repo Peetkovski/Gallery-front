@@ -1,9 +1,9 @@
-
+<button (click)="showOverview()"> addImage</button>
 <div *ngFor="let tempGalery of gallery" class="Sum">
   <div class="Object">
     <div  class="image">
 
-      <img width="230px" height="330px" src="{{tempGalery.image}}" />
+      <img  width="230px" height="330px" src="{{tempGalery.image}}" />
 
 
 
@@ -20,7 +20,7 @@
 
   <div class="Overview">
 
-    <div class="ObjectOverview">
+    <div  class="ObjectOverview">
       <div  class="imageOverview">
 
         <img width="400px" height="560px" src="{{tempGalery.image}}" />
@@ -48,7 +48,12 @@
 
     </div>
 
-    <app-user-form></app-user-form>
 
   </div>
+
+
+
+</div>
+<div  [hidden]="isDisplay" class="formDisplay">
+  <app-gallery-form></app-gallery-form>
 </div>

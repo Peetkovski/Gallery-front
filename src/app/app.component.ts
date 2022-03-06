@@ -11,8 +11,13 @@ import {Observable} from "rxjs";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  isDisplay = true;
   title = "ess";
+
+
+  showOverview(){
+  this.isDisplay = !this.isDisplay;
+  }
 
   //TODO DODAJ POST METHOD DO BACKENDU!!!!!
 

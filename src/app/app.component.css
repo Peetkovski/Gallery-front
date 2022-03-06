@@ -13,14 +13,11 @@ button{
 }
 
 .categories > button{
-  text-align: left;
-  margin-left: 30px;
 }
 
 .addOverview{
-  visibility: hidden;
+  background-color: #90BFE8;
   margin-left: 300px;
-  border-style: solid;
   width: 1200px;
   height: 700px;
   position: absolute;
